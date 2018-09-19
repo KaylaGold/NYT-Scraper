@@ -3,7 +3,7 @@
 ## Overview
 The New York Times News Scraper app scrapes articles from the New York Times website and allows users to save articles and leave comments on the latest news.
 
-![Screenshot](./public/assets/images/nytns.jpg)
+![Screenshot](./public/assets/images/nytns.png)
 
 ## How It Works
 - Scrape articles by clicking the "Scrape for Newest Articles" button.
