@@ -42,15 +42,15 @@ header button {
 }
 
 #all-articles {
-	background-color: #999;
+	background-color:blue;
 }
 
 #saved-articles {
-	background-color: #aaa;
+	background-color:darkkhaki;
 }
 
 #refresh-articles {
-	background-color: #bbb;
+	background-color:darkred;
 }
 
 #all-articles:hover, #saved-articles:hover, #refresh-articles:hover {
@@ -73,6 +73,7 @@ header button {
 	margin-top: 10px;
 	height: 63%;
 	margin-right: 10px;
+	background-color: red;
 }
 
 #sitename {
