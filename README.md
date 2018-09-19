@@ -12,7 +12,7 @@ The New York Times News Scraper app scrapes articles from the New York Times web
 - Comments can be added on saved articles by clicking the "Edit Note" button.
 - Saved articles can be unsaved by clicking the "Unsave" button.
 
-[Check out the App]
+[Check out the App] https://secret-thicket-38180.herokuapp.com/
 
 ## Technologies Used
 - Node.js
