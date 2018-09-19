@@ -1,10 +1,8 @@
 // Dependencies
 let express = require("express");
-// let method = require("method-override");
 let body = require("body-parser");
 let exphbs = require("express-handlebars");
 let mongoose = require("mongoose");
-// let logger = require("morgan");
 let cheerio = require("cheerio");
 let request = require("request");
 
@@ -38,10 +36,9 @@ let port = process.env.PORT || 3000;
 
 // app set-ups
 
-// app.use(logger("dev"));
+
 app.use(express.static("public"));
 app.use(body.urlencoded({extended: false}));
-// app.use(method("_method"));
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
@@ -54,7 +51,7 @@ app.listen(port, function() {
 app.get("/", function(req, res) {
 	Article.find({}, null, {sort: {created: -1}}, function(err, data) {
 		if(data.length === 0) {
-			res.render("placeholder", {message: "There's nothing scraped yet. Please click \"Scrape For Newest Articles\" for fresh and delicious news."});
+			res.render("placeholder", {message: "Nothing has been scraped yet. Please click \"Scrape For Newest Articles\" for updated news!"});
 		}
 		else{
 			res.render("index", {articles: data});
