@@ -1,10 +1,10 @@
 // Dependencies
 let express = require("express");
-let method = require("method-override");
+// let method = require("method-override");
 let body = require("body-parser");
 let exphbs = require("express-handlebars");
 let mongoose = require("mongoose");
-let logger = require("morgan");
+// let logger = require("morgan");
 let cheerio = require("cheerio");
 let request = require("request");
 
@@ -38,10 +38,10 @@ let port = process.env.PORT || 3000;
 
 // app set-ups
 
-app.use(logger("dev"));
+// app.use(logger("dev"));
 app.use(express.static("public"));
 app.use(body.urlencoded({extended: false}));
-app.use(method("_method"));
+// app.use(method("_method"));
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
